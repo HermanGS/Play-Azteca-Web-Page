@@ -190,14 +190,18 @@ nav svg{
 
 @media(max-width:1142px){
     .links-container{
-        
+        display: none;
         flex-direction: column;
         align-items:flex-start;
         position: fixed;
         top: 0;
+        
+        /*
         right: -100%;
+        */
+        right: 0;
         z-index: 10;
-        width: 600px;
+        width: 60%;
         
         background-color: #ffffffce;
         backdrop-filter: blur(10px);
@@ -222,7 +226,10 @@ nav svg{
         display: block;
     }
     #sidebar-active:checked ~ .links-container{
+        /*
         right: 0;
+        */
+        display: flex;
     }
 
     #sidebar-active:checked ~ #overlay{
@@ -246,6 +253,16 @@ nav svg{
     }
 
 }
+
+@media(max-width:400px){
+
+    .links-container{
+        width: 100%;
+    }
+
+
+}
+
 
 
 .boton-diamante {
