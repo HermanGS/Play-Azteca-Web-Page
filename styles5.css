@@ -22,11 +22,13 @@
 
 }
 
-
+html{
+    overflow:hidden;
+}
 
 body {
     min-height: 100dvh;
-
+    overflow: hidden;
     
     
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
